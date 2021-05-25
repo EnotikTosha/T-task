@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Task</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-overlay">
+            <div class="container">
+                <div class="header-top">
+                    <div class="logo">
+                        <a class="logo_link">
+                            <img src="images/logo.svg" alt="логотип">
+                        </a>
+                    </div>
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item">
+                                <a href="#">Main</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Gallery</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">News</a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#">Pfofile</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-phone">
+                        <a class="phone" href="tel:+544349000000">+544 3490 00000</a>
+                        <span class="phone-title">Звони скорее!</span>
+                    </div>
+                    <div class="header-burger">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="header-title">
+                    <p class="title">Найдено 349 котов</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="products">
+            <div class="container">
+                <div class="products-top">
+                    <span class="sort-title">Сортировать по:</span>
+                    <button id="sort-price">Цене</button>
+                    <button id="sort-age">Возрасту</button>
+                </div>
+                <div class="products-cards">
+                    <div class="cards-columns" data-price="30000" data-age="2">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-1.jpg" alt="кот полосатый">
+                                <span class="sale">
+                                    -40%
+                                </span>
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>2 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    30 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button">
+                                Купить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards-columns" data-price="40000" data-age="4">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-2.jpg" alt="кот полосатый">
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>4 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    40 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button sold">
+                                Продан
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards-columns" data-price="20000" data-age="2">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-3.jpg" alt="кот полосатый">
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>2 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    20 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button">
+                                Купить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards-columns" data-price="25000" data-age="5">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-1.jpg" alt="кот полосатый">
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>5 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    25 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button">
+                                Купить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards-columns" data-price="30000" data-age="1">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-3.jpg" alt="кот полосатый">
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                                <span class="sale">
+                                    -40%
+                                </span>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>1 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    30 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button">
+                                Купить
+                            </button>
+                        </div>
+                    </div>
+                    <div class="cards-columns" data-price="10000" data-age="3">
+                        <div class="cards-items">
+                            <div class="cards-img">
+                                <img src="images/cat-2.jpg" alt="кот полосатый">
+                                <svg display="none">
+                                    <symbol id="like" viewBox="0 0 46 42">
+                                        <path
+                                            d="M33.7812 0.695312C31.2851 0.695312 28.9966 1.4863 26.9794 3.04634C25.0456 4.54197 23.758 6.44693 23 7.83214C22.242 6.44684 20.9544 4.54197 19.0206 3.04634C17.0034 1.4863 14.7149 0.695312 12.2188 0.695312C5.25298 0.695312 0 6.39293 0 13.9485C0 22.1112 6.55347 27.696 16.4746 36.1505C18.1593 37.5863 20.0689 39.2138 22.0538 40.9494C22.3154 41.1785 22.6514 41.3047 23 41.3047C23.3486 41.3047 23.6846 41.1785 23.9462 40.9495C25.9312 39.2136 27.8408 37.5862 29.5265 36.1496C39.4465 27.696 46 22.1112 46 13.9485C46 6.39293 40.747 0.695312 33.7812 0.695312Z" />
+                                    </symbol>
+                                </svg>
+                                <svg class="like-img" width="46" height="42">
+                                    <use href="#like"></use>
+                                </svg>
+                            </div>
+                            <div class="cards-descr">
+                                <div class="descr-title">
+                                    Кот полосатый
+                                </div>
+                                <div class="descr">
+                                    <p class="color">
+                                        Коричневый окрас
+                                    </p>
+                                    <p class="age">
+                                        <span>3 мес.</span>Возраст
+                                    </p>
+                                    <p class="paws">
+                                        <span>4</span>Кол-во лап
+                                    </p>
+                                </div>
+                                <div class="descr-price">
+                                    10 000 руб.
+                                </div>
+                            </div>
+                            <button class="cards-button sold">
+                                Продан
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <button class="show_more">
+                        Показать ещё 20
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="subscribe">
+            <div class="container">
+                <div class="subscribe-inner">
+                    <div class="subscribe-text">
+                        <div class="subscribe-title">
+                            Успей купить!
+                        </div>
+                        <div class="subscribe-subtitle">
+                            Подпишись и успей словить все акции
+                        </div>
+                    </div>
+                    <div class="subscribe-items">
+                        <form class="subscribe-form">
+                            <input id="mail" type="text" placeholder="Email">
+                            <button id="submit" class="subscribe-btn">Подписаться</button>
+                        </form>
+                        <div class="subscribe-check">
+                            <input class="sub-checkbox" id="input-checkbox" type="checkbox">
+                            <label class="sub-label" for="input-checkbox">Подписаться на новости</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="scrollTop isShow hide">
+        </div>
+
+        <div class="popup">
+            <div class="close-popup">
+            </div>
+            <p class="popup-title">Добавлено в избранное</p>
+        </div>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>
